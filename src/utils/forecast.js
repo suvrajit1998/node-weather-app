@@ -15,7 +15,7 @@ const foreCast = (longtitute, lattitute, callback) => {
     } else {
       callback(
         undefined,
-        `${body.daily.data[0].summary} It is Currently ${body.currently.temperature} degrees out. There is a ${body.currently.precipProbability} % chance of rain.`
+        `${body.daily.data[0].summary} It is Currently ${body.currently.temperature} degrees out.This high today ${body.daily.data[0].temperatureHigh} with a low of ${body.daily.data[0].temperatureLow} .There is a ${body.currently.precipProbability} % chance of rain.`
       )
     }
   })
